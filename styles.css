@@ -1,0 +1,127 @@
+body {
+    background-color: #1d1c1c;
+    margin: 0;
+    font-family: 'Play', sans-serif;
+    display: flex;
+    flex-direction: column; /* Centers horizontally */
+    align-items: center;
+}
+
+p {
+    font-family: Play;
+    margin: 0;
+}
+
+.title-container {
+    display: flex;
+    background-color: #121111;
+    justify-content: center;
+    padding: 14px 10px;
+    width: 100%;
+}
+
+#game-title {
+    color: rgba(255, 255, 255, 0.865);
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+}
+
+.game-container {
+    margin-top: 10px;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.player-container, .computer-container{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 360px;
+    align-items: center;
+    flex: 1;
+}
+
+#player-header, #computer-header {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.865);
+    text-align: center;
+    flex: 2;
+}
+
+#versus-header {
+    color: rgba(255, 255, 255, 0.865);
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+}
+
+.player-move-box, .computer-move-box{
+    width: 300px;
+    height: 300px;
+    border: 2px solid;
+    background-color: #3e3d3d;
+}
+
+.selection-container{
+    display: flex;
+    width: 450px;
+    height: 140px;
+    margin: 20px 265px;
+    justify-content: space-between;
+}
+
+.rock-button{
+    display: flex;
+    width: 130px;
+    height: 130px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(98, 98, 242);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.15s;
+}
+.rock-button:active{
+    background-color: rgb(59, 59, 247);
+}
+
+.paper-button{
+    display: flex;
+    width: 130px;
+    height: 130px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(237, 73, 73);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.15s;
+}
+.paper-button:active{
+    background-color: rgb(182, 22, 22);
+}
+
+.scissor-button{
+    display: flex;
+    width: 130px;
+    height: 130px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(105, 239, 105);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.15s;
+}
+.scissor-button:active{
+    background-color: rgb(11, 167, 11);
+}
+
+#select-text{
+    margin-top: 5px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.865);
+}
